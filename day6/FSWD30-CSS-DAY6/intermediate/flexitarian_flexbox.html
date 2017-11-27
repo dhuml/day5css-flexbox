@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexitarian</title>
+	<style type="text/css">
+
+		body {
+			display:flex;
+			justify-content: center;
+		}
+
+		.container {
+			display:flex;
+			width:50%;
+			height:1000px;
+			border:1px solid black;
+			flex-direction: column;
+
+		}
+
+		.table_row {
+			display:flex;
+			height:30px;
+		}
+
+
+		
+		.table_col {
+			border:1px solid black;
+			
+		}
+
+		.table_col:nth-child(1){flex:2; }
+		.table_col:nth-child(2){flex:1;}
+		.table_col:nth-child(3){flex:1;}
+
+		.table_col:nth-child(even) {
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	
+	<div class="container">
+		
+		<h1>Nutrition Facts</h1>
+
+		<p>Serving Size 1 cup (50g) <br>
+		Serving Per Container 10</p>
+
+		<div class="table_row">
+			<div class="table_col">Amount</div>
+			<div class="table_col">Cereal</div>
+			<div class="table_col">Milk</div>
+			
+		</div>
+
+		<div class="table_row">
+			<div class="table_col">1</div>
+			<div class="table_col">2</div>
+			<div class="table_col">3</div>
+			
+		</div>
+
+		<div class="table_row">
+			<div class="table_col">1</div>
+			<div class="table_col">2</div>
+			<div class="table_col">3</div>
+			
+		</div>
+
+		<div class="table_row">
+			<div class="table_col">1</div>
+			<div class="table_col">2</div>
+			<div class="table_col">3</div>
+			
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+</body>
+</html>

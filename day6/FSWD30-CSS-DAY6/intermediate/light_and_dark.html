@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light and Dark</title>
+	<style type="text/css">
+		.headlogo {
+			width:100%;
+			height:200px;
+			background-color: #A9D0F5;
+			display:flex;
+			justify-content: center;
+		}
+
+		nav {
+			width:100%;
+			background-color:#A4A4A4;
+			display:flex;
+			justify-content:flex-start;
+			
+		}
+
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			display:flex;
+			justify-content: center;
+			
+		}
+
+		li {
+			padding:30px;
+			border:2px solid transparent;
+			transition:border 1s;
+			
+		}
+
+		li:hover {
+			border:2px solid #585858;
+
+		}
+
+		.row {
+			height:200px;
+			display:flex;
+			justify-content: space-between;
+			width:200px;
+			background-color: lightgrey;
+			margin-top: 5px;
+		}
+		
+		.col {
+
+			
+			min-width:200px;
+
+		}
+
+
+		div.col:nth-child(odd) {
+			background-color:#81F7BE;
+			transition:width 2s, background-color 2s;
+			transition-timing-function: ease;
+		}
+
+		div.col:nth-child(odd):hover {
+			width:25%;
+			background-color: #DA81F5;
+			
+
+		}
+
+
+		div.col:nth-child(even) {
+			background-color:#DA81F5;
+			transition:width 3s, transform 1s;
+				transition-timing-function: ease;
+		}
+		
+		div.col:nth-child(even):hover{
+				background-color: #81F7BE;
+				width:25%;
+				
+			}
+
+		@media screen and (max-width:840px) {
+			.row {
+				flex-direction: column;
+			} 
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+	<header>
+		<div class="headlogo">
+			
+		</div>
+
+		<nav>
+			<ul>
+				<li>HOME</li>
+				<li>TEST1</li>
+				<li>TEST2</li>
+				<li>TEST3</li>
+			</ul>
+		</nav>
+
+
+		
+	</header>
+
+	<main>
+		<div class="row">
+			<div class="col">123</div>
+			<div class="col">asd</div>
+			<div class="col">456</div>
+			<div class="col">fjk</div>
+
+		</div>
+
+		<div class="row">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+	</main>
+
+	<footer>
+		
+
+	</footer>
+
+
+</body>
+
+
+</html>
